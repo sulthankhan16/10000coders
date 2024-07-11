@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+</head>
+<body>
+
+    <form action="../July2/arjun.html" method="get">
+
+
+   
+
+    <label for="uname">User Name</label>
+    <input type="text" id="uname" required placeholder="User Name" pattern="[a-zA-Z\d_\.]+" title="Enter a Valid UserName"><br>
+    <label for="pass">Password</label>
+    <input type="password" name="pass" id="pass" placeholder="Password" required pattern="(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[@#%]).{8,16}" ><br>
+    <label for="mail">Email</label>
+    <input type="text" name="mail" id="mail" placeholder="Email" required pattern="[a-z0-9._]+@[a-z]+\.[a-z]{2,}" title="Enter a valid Email Adress"><br>
+    <label for="phno">Phone Number</label>
+    <input type="text" name="phno" id="phno" placeholder="Phone Number" required pattern="\+91[6-9]\d{9}"><br>
+    <label for="dob">DOB</label>
+    <input type="date" name="dob" id="phno"><br>
+    <label for="state">State</label>
+    <select name="state" id="state">
+        <option value="Andhra_Pradesh">Andhra Pradesh</option>
+        <option value="Telangana">Telangana</option>
+        <option value="tamilnadu">Tamilnadu</option>
+        <option value="kerala">Kerala</option>
+        <option value="karnataka">karnataka</option>
+        <option value="goa">Goa</option>
+        <option value="maharastra">Maharastra</option>
+    </select><br>
+    <label>City </label>
+    <input list="city" autocomplete="on">
+   
+    <datalist id="city">
+        <option value="Hyderabad" />
+        <option value="Mumbai" />
+        <option value="Vishakapatnam" />
+        <option value="Chennai" />
+        <option value="Bangolore" />
+    </datalist>
+    <br>
+    <input type="submit" name="" id="">
+    </form>
+    
+</body>
+</html>
