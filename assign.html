@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Registration Form</h2>
+
+    <form action="./patterns.html" method="post">
+
+        <label for="fname">First Name</label>
+        <input type="text" id="fname" placeholder="First Name" pattern="[a-zA-Z]+{5,10} required"><br>
+
+        <label for="lname">Last Name</label>
+        <input type="text" id="lname" placeholder="Last Name" pattern="[a-zA-Z]+{2,8}" required><br>
+        <label for="pass">Password</label>
+        <input type="text" id="pass" placeholder="Password" pattern="[a-zA-Z\d!@#$%^&()]+{8,16} required" title="Enter Password in required format"><br>
+        <label for="mail">Email</label>
+        <input type="text" id="mail" placeholder="Email" pattern="[a-z\d@_]+{5,10} required"><br>
+        <input type="submit">
+    </form>
+
+
+    
+</body>
+</html>
+
+<!--
+REGISTER
+    FNAME - ONLY ALPHA AND WITH RANGE 5-10
+    LNAME - ONLY ALPHA RANGE 2-8
+    PASSWORDS - - MIN LEN 8 AND APPLY ALL EXCEPT SPACE
+    EMAIL - @ [a-Z\d@_]+
+
+-->
